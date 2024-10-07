@@ -6,7 +6,10 @@ function sort(sortBy, list) {
    // a partir de la letra recibida. Por ejemplo:
    // recibes --> ("a", [{ a: 1, b: 3 }, { a: 3, b: 2 }, { a: 2, b: 40 }])
    // retorna --> [{ a: 3, b: 2 }, { a: 2, b: 40 }, { a: 1, b: 3 }]
-   // Tu código:
+   // Tu código: ayuda gpt
+
+   return list.sort((a, b) => b[sortBy] - a[sortBy]);
+   
 }
 
 module.exports = sort;
